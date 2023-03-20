@@ -1,0 +1,33 @@
+.publications-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.publications-link{
+  color: black;
+  margin: 10px 0px;
+  border-radius: 10px;
+  background-color: #f4f1f1;
+  padding: 10px 5px;
+}
+.publications-link:hover{
+  text-decoration: underline;
+  background-color: #ebebeb;
+}
+.publications-link-title{
+  color: black;
+}
+.publications-data{
+  font-size: 12px;
+  color: black;
+  padding-bottom: 15px;
+}
+.publications-link-description{
+  font-size: 15px;
+  color: purple;
+  padding-top: 5px;
+}
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Blog de programação</title>
+  <link href="./css/styles.css" rel="stylesheet" type="text/css">
+  <link href="./css/home.css" rel="stylesheet" type="text/css">
+  <link href="./css/banner.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="body-box">
+    <header class="app-bar-background">
+      <div class="app-bar">
+        <div class="app-bar-left">
+          <img src="./images/logo-icon.png" class="logo-icon" alt="logo">
+          <div class="app-bar-header">
+            <h1 class="app-bar-header-title">Blog de desenvolvimento Web<span class="app-bar-header-title-extension">:
+                HTML5, CSS e Javascript</span></h1>
+            <nav class="app-bar-links">
+              <a href="index.html">Home</a>
+              <span class="link-separator">|</span>
+              <a href="about.html">Sobre</a>
+              <span class="link-separator">|</span>
+              <a href="contact.html">Contato</a>
+            </nav>
+          </div>
+        </div>
+        <div class="app-bar-right">
+          <div class="app-bar-right-full-icons">
+            <button id="hamburguer-button" class="hamburguer-button">
+              <img src="./images/icon-hambuger.png" class="app-bar-right-icon" alt="Hamburguer icon">
+            </button>
+            <nav id="hamburguer-menu" class="hidden">
+              <ul id="hamburguer-menu-list">
+                <li><a href="https://www.linkedin.com/in/sergio-henrique-0615851a8/" target="_blank"><img
+                      src="../images/icon-linkedin.svg" class="app-bar-right-icon" alt="Linkedin icon">
+                    <p>Linkedin</p>
+                  </a></li>
+                <li><a href="https://github.com/sergionavire" target="_blank"><img src="../images/icon-git.svg"
+                      class="app-bar-right-icon" alt="Github icon">
+                    <p>Github</p>
+                  </a></li>
+                <li><a
+                    href="https://wa.me/5521983702227?text=Ola,%20eu%20vi%20o%20seu%20blog%20e%20gostaria%20de%20contactá-lo!"
+                    target="_blank"><img src="../images/icon-whatsapp.svg" class="app-bar-right-icon"
+                      alt="Whatsapp icon">
+                    <p>Whatsapp</p>
+                  </a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <div id="banner-image">
+        <div id="banner-ball">
+        </div>
+      </div>
+    </section>
+    <main class="app-body">
+      <div class="navigation-info">
+        Home
+      </div>
+      <h2 class="app-body-header">Publicações 2023</h2>
+      <div class="publications-list">
+        <a href="./publications/publication-ecma-script.html" class="publications-link">
+          <h3 class="publications-link-title">Propósito do ECMA Script</h3>
+          <span class="publications-data">30/01/2023 - javascript, ECMA Script</span>
+          <p class="publications-link-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+        </a>
+        <a href="#" class="publications-link">
+          <h3 class="publications-link-title">Propósito do ECMA Script</h3>
+          <span class="publications-data">30/01/2023 - javascript, ECMA Script</span>
+          <p class="publications-link-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+        </a>
+      </div>
+    </main>
+    <footer>
+      <p>@ Copyright 2023 Sergio Henrique Carvalho</p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="./js/drawer.js"></script>
+  <script type="text/javascript" src="./js/banner.js"></script>
+</body>
+
+</html>

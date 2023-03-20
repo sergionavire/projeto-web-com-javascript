@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Blog de programação</title>
+  <link href="./css/styles.css" rel="stylesheet" type="text/css">
+  <link href="./css/contact.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="body-box">
+    <header class="app-bar-background">
+      <div class="app-bar">
+        <div class="app-bar-left">
+          <img src="./images/logo-icon.png" class="logo-icon" alt="logo">
+          <div class="app-bar-header">
+            <h1 class="app-bar-header-title">Blog de desenvolvimento Web<span class="app-bar-header-title-extension">:
+                HTML5, CSS e Javascript</span></h1>
+            <nav class="app-bar-links">
+              <a href="index.html">Home</a>
+              <span class="link-separator">|</span>
+              <a href="about.html">Sobre</a>
+              <span class="link-separator">|</span>
+              <a href="contact.html">Contato</a>
+            </nav>
+          </div>
+        </div>
+        <div class="app-bar-right">
+          <div class="app-bar-right-full-icons">
+            <button id="hamburguer-button" class="hamburguer-button">
+              <img src="./images/icon-hambuger.png" class="app-bar-right-icon" alt="Hamburguer icon">
+            </button>
+            <nav id="hamburguer-menu" class="hidden">
+              <ul id="hamburguer-menu-list">
+                <li><a href="https://www.linkedin.com/in/sergio-henrique-0615851a8/" target="_blank"><img
+                      src="../images/icon-linkedin.svg" class="app-bar-right-icon" alt="Linkedin icon">
+                    <p>Linkedin</p>
+                  </a></li>
+                <li><a href="https://github.com/sergionavire" target="_blank"><img src="../images/icon-git.svg"
+                      class="app-bar-right-icon" alt="Github icon">
+                    <p>Github</p>
+                  </a></li>
+                <li><a
+                    href="https://wa.me/5521983702227?text=Ola,%20eu%20vi%20o%20seu%20blog%20e%20gostaria%20de%20contactá-lo!"
+                    target="_blank"><img src="../images/icon-whatsapp.svg" class="app-bar-right-icon"
+                      alt="Whatsapp icon">
+                    <p>Whatsapp</p>
+                  </a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="app-body">
+      <div class="navigation-info">
+        <a href="index.html" class="navigation-info-link">Home</a> > Contato
+      </div>
+      <h2 class="app-body-header">Contato</h2>
+      <form id="form">
+        <div class="contact-body">
+          <div class="contact-form">
+            <div class="contact-form-line">
+              <label for="name">Nome: </label>
+              <div>
+                <input type="text" name="name" placeholder="Digite o nome" id="name" class="campo-texto-digitar">
+                <span class="text-error" id="error-name"></span>
+              </div>
+            </div>
+
+            <div class="contact-form-line">
+              <label for="email">Email: </label>
+              <div>
+                <input type="text" name="email" placeholder="Digite o email" id="email" class="campo-texto-digitar">
+                <span class="text-error" id="error-email"></span>
+              </div>
+            </div>
+            <div class="contact-form-line">
+              <label for="phone">Telefone: </label>
+              <input type="tel" name="phone" placeholder="Digite o telefone (opicional)" id="telefone"
+                class="campo-texto-digitar">
+            </div>
+            <div class="contact-form-list" id="how-know-line">
+              <h3>Como conheceu o blog: </h3>
+              <div>
+                <ul id="how-know-list">
+                  <li>
+                    <input type="radio" name="how-know" value="Google" id="how-know-google">
+                    <label for="how-know-google">Google</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="how-know" value="Facebook" id="how-know-facebook">
+                    <label for="how-know-facebook">Facebook</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="how-know" value="Twitter" id="how-know-twitter">
+                    <label for="how-know-twitter">Twitter</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="how-know" value="Indicacao" id="how-know-indication">
+                    <label for="how-know-indication">Indicação de amigo</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="how-know" value="Outro" id="how-know-other">
+                    <label for="input-como-conheceu-outro">Outro</label>
+                  </li>
+                </ul>
+                <span class="text-error" id="error-how-know"></span>
+              </div>
+            </div>
+            <div class="contact-form-list">
+              <h3>Assuntos de interesse:</h3>
+              <div>
+                <ul id="subject-matter">
+                  <li>
+                    <input type="checkbox" name="html5" value="html5" id="input-html5">
+                    <label for="input-html5">HTML 5</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="css3" value="css3" id="input-css3">
+                    <label for="input-css3">CSS 3</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="javascript" value="javascript" id="input-javascript">
+                    <label for="input-javascript">Javascript</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="reactjs" value="reactjs" id="input-reactjs">
+                    <label for="input-reactjs">React JS</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="react-native" value="react-native" id="input-react-native">
+                    <label for="input-react-native">React Native</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="nodejs" value="Google" id="input-nodejs">
+                    <label for="input-nodejs">Node JS</label>
+                  </li>
+                </ul>
+                <span class="text-error" id="error-subject-matter"></span>
+              </div>
+            </div>
+            <div class="contact-form-line" id="mesage-line">
+              <label for="mesage">Mensagem:</label>
+              <div>
+                <textarea id="mesage" name="mesage" class="campo-texto-digitar"></textarea>
+                <span class="text-error" id="error-mesage"></span>
+              </div>
+            </div>
+            <div class="contact-form-line" id="receber-emails-line">
+              <input type="checkbox" name="receber-email" value="receber-email" id="input-receber-email">
+              <label for="input-receber-email">Aceito receber emails informativos</label>
+            </div>
+            <div class="contact-form-line" id="submit-line">
+              <input type="submit" name="enviar" value="Enviar">
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>@ Copyright 2023 Sergio Henrique Carvalho</p>
+    </footer>
+    <script type="text/javascript" src="./js/drawer.js"></script>
+    <script type="text/javascript" src="./js/contact.js"></script>
+  </div>
+</body>
+
+</html>

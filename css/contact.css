@@ -1,0 +1,104 @@
+ul,li{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact-form{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 500px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.contact-form-line{
+  display: flex;
+  box-sizing: border-box;
+}
+.contact-form-line label{
+  flex-grow: 200px;
+  padding: 5px 0px;
+  width: 100px;
+  text-align: right;
+  box-sizing: border-box;
+}
+.contact-form-list{
+  margin-left: 110px;
+}
+ .contact-form-list h3{
+  padding: 15px 0;
+  font-size: 18px;
+  color: #7c2d75;
+ }
+#como-conheceu-line{
+  flex-direction: column;
+}
+#como-conheceu-line ul{
+  width: 100%;
+  display: flex;
+  justify-content: espace-evenly;
+  margin: auto;
+}
+#assunto-de-interesse{
+  flex-direction: column;
+}
+#receber-emails-line label{
+  width: 100%;
+  margin-left: 15px;
+  text-align: left;
+}
+#mesage-line textarea{
+  height: 80px;
+}
+#submit-line input{
+  background-color: greenyellow;
+  height: 45px;
+  width: 95px;
+  text-align: center;
+  border: none;
+}
+#submit-line input:hover{
+  cursor: pointer;
+  background-color: #87ba3b;
+}
+input,textarea{
+  outline: none;
+}
+input:focus,textarea:focus{
+  outline: none;
+}
+.campo-texto-digitar{
+  width: 300px;
+}
+.text-error{
+  display: block;
+  color: red;
+  font-size: 10px;
+}
+
+@media(max-width: 730px){
+  .contact-form-line{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form-line label{
+    padding: 5px 0px;
+    width: 100px;
+    text-align: left;
+  }
+  .campo-texto-digitar{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #receber-emails-line{
+    flex-direction: row;
+  }
+  .contact-form{
+    width: 100%;
+  }
+  #como-conheceu-line ul{
+    flex-direction: column;
+  }
+}
